@@ -1,273 +1,96 @@
-html {
-    font-size: 100%;
-    box-sizing: border-box;
+@media screen and (min-width: 0px) {
+    .title{
+        text-align: center;
+    }
+
+    h1{
+        color: #fff;
+        font-family: "DM Serif Display", serif;
+        font-size: 6.25rem;
+        line-height: 6.25rem;
+        font-weight: lighter;
+
+    }
+
+    h2{
+        color:#402b2b;
+        font-family: "DM Serief Display", serif;
+        font-size: 3rem;
+        line-height: 4rem;
+        font-weight: lighter;
+    }
+
+    h3{
+        color: #ee4d47;
+        font-family: "Rubik", serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+        letter-spacing: 0.09rem;
+        line-height: 2.5rem;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+
+    .btn{
+        color:#fff;
+        background-color: #ee4d47;
+        font-family: "Rubik", serif;
+        font-size: 0.87rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 1.19rem;
+        border-radius: 0.31rem;
+        border: none;
+        cursor: pointer;
+        -webkit-animation: color-change-2x 5s linear infinite;
+        animation: color-change-2x 5s linear infinite;
+    }
 }
 
-body{
-    background-color:#FEF8F5;
-    margin: auto;
+/*        480 PX MAX           */
+
+@media screen and (max-width: 480px) {
+
+    .legend-text h1 {
+        font-size: 3.25rem;
+        line-height: 4.5rem;
+    }
+
+    .clients h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
 }
 
-header{
-    background-image: url(../images/Background\ Scene.svg);
-    background-repeat: no-repeat;
-    background-position-x: -50%;
-    background-position-y: -60px;
+/*        768 PX MAX           */
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
     
-    position: relative;
-    margin-bottom: 10%;
+    .legend-text h1 {
+        font-size: 5.5rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
 }
 
-section{
-    margin-bottom: 10%;
-    display: flex;
-    justify-content: space-between;
+/*        1279 PX MAX           */
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {}
+
+
+/*        1280+ PX             */
+
+
+@media screen and (width: 2560px) {
+
+   .legend-text h1 {
+        font-size: 3.5rem;
+    }
 }
-
-footer{
-    background-color: #f16353;
-    margin: auto;
-    padding: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 12.8em;
-}
-
-.container{
-    width: 75%;
-    margin:auto;                                                                                                                                                 
-}
-
-.title{
-    text-align: center;
-}
-
-h1{
-    color: #fff;
-    font-family: "DM Serif Display", serif;
-    font-size: 6.25rem;
-    line-height: 6.25rem;
-    font-weight: lighter;
-
-}
-
-h2{
-    color:#402b2b;
-    font-family: "DM Serief Display", serif;
-    font-size: 3rem;
-    line-height: 4rem;
-}
-
-h3{
-    color: #ee4d47;
-    font-family: "Rubik", serif;
-    font-size: 1.5rem;
-    font-weight: bold;
-    letter-spacing: 0.09rem;
-    line-height: 2.5rem;
-    text-transform: uppercase;
-}
-
-.btn{
-    color:#fff;
-    background-color: #ee4d47;
-    font-family: "Rubik", serif;
-    font-size: 0.87rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    border-radius: 0.31rem;
-    border: none;
-    cursor: pointer;
-}
-
-.panel{
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    margin: auto;
-    margin-bottom: 9.4em;
-    height: 3.12em;
-    width: 71%;
-}
-
-.logo, .nav{
-    margin-top: 3.12em;
-}
-
-.nav ul{
-    margin: auto;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    justify-content: space-between;
-}
-
-.nav {
-    line-height: 3.75em;
-    width: 53%;
-  }
-
-.nav a:link, a:visited{
-    color: #fff;
-    font-family: "Rubik", serif;
-    font-size: 0.85rem;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.nav-button{
-    width: 9.87em;
-}
-
-.legend{
-    margin: auto;
-    width: 71%;
-}
-
-.legend-text{
-    width: 46rem;
-}
-
-.legend-button{
-    letter-spacing: 5%;
-    margin:0;
-    padding: 1em 2.2em;
-    height: 3.75em;
-    align-items: center;
-    display: flex;
-
-}
-
-.arrow-legend-button{
-    background-image: url(../images/arrow.svg);
-    width: 1.8rem;
-    height: 0.75rem;
-    margin-left: 1.5em;
-}
-
-.car-image{
-    position: relative;
-    margin-top: 3.12em;
-    margin-left: -12.5em;
-
-}
-
-.about-us-left, .how-to-apply{
-    margin-bottom: 10%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.article{
-    font-family: "Rubik", serif;
-    max-width: 40%;
-}
-
-.article-text{
-    color: #402b2b;
-    font-size: 1.25rem;
-    line-height: 2.5rem;
-    font-weight: lighter;
-}
-
-.question{
-    color: #402b2b;
-    background-color: #fcddd4;
-    width: 100%;
-    font-size: 1.5rem;
-    margin: auto;
-    margin-top: 10%;
-    padding: 1.87rem;
-    font-weight: 500;
-    line-height: 2.25rem;
-    border-radius: 0.3rem 0 0 0.3rem;
-    border-left: #ed4d47 solid 0.62rem;
-}
-
-.applying-img{
-    margin-left: -7.5em;
-    margin-top: -7.5em;
-}
-
-.about-us-left{
-    flex-direction: row;
-}
-
-.how-to-apply{
-    flex-direction: row-reverse;
-}
-
-.clients{
-    margin: auto;
-    margin-bottom: 12%;
-    max-width: 85%;
-}
-
-.clients-info{
-    justify-content: space-between;
-    display: flex;
-}
-
-.clients-info-table{
-    background-color: #fff;
-    height: 22.5rem;
-    width: 26.25rem;
-    flex-direction: column;
-    align-items: center;
-    display: flex;
-    justify-content: flex-start;
-    box-shadow: 0 1.25rem 2.5rem rgba(238, 77, 71, 0.1);
-    border-radius: 0.62rem;
-}
-
-.clients-info-table-text{
-    color: #402b2b;
-    font-family: "Rubik", serif;
-    font-weight: 300;
-    font-size: 1rem;
-    width: 20em;
-    margin: auto;
-    line-height: 187%;
-}
-
-.clients-info-photo{
-    margin: auto;
-    width: 20rem;
-    align-items: center;
-    display: flex;
-    max-height: 3.75rem;
-}
-
-.clients-info-name{
-    color: #402b2b;
-    font-family: "Roboto", serif;
-    font-size: 1em;
-    margin-left: 1.25em;
-    line-height: 187%;
-}
-
-.copyright{
-    color: #f8f9fa;
-    font-family: "Rubik", serif;
-    font-size: 1rem;
-    font-weight: bold;
-    line-height: 1.87rem;
-}
-
-.footer-logo{
-    background-image: url(../images/logo.svg);
-    width: 13.25em;
-    height: 3.12em;
-}
-
-.footer-social-media{
-    display: flex;
-    width: 10.62em;
-    justify-content: space-between;
-}
-
-

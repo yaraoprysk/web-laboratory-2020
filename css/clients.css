@@ -1,0 +1,120 @@
+@media screen and (min-width: 0px) {
+  .clients-info{
+    justify-content: space-between;
+    display: flex;
+    margin-top: 5%;
+  }
+
+  .clients-info-table{
+    background-color: #fff;
+    height: 22.5rem;
+    width: 26.25rem;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    box-shadow: 0 1.25rem 2.5rem rgba(238, 77, 71, 0.1);
+    border-radius: 0.62rem;
+  }
+
+  .clients-info-table-text{
+    color: #402b2b;
+    font-family: "Rubik", serif;
+    font-weight: 300;
+    font-size: 1rem;
+    width: 20em;
+    margin: auto;
+    line-height: 187%;
+  }
+
+  .clients-info-photo{
+    margin: auto;
+    width: 20rem;
+    align-items: center;
+    display: flex;
+    max-height: 3.75rem;
+  }
+
+  .clients-info-name{
+    color: #402b2b;
+    font-family: "Roboto", serif;
+    font-size: 1em;
+    margin-left: 1.25em;
+    line-height: 187%;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .clients-info {
+    flex-direction: column;
+    width: 100%;
+    max-width: 120%;
+  }
+
+  .clients-info-table {
+    margin-bottom: 40px;
+  }
+
+  .clients-info-table-text {
+    max-width: 75%;
+    width: 75%;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  .clients-info-name {
+    max-width: 75%;
+    width: 75%;
+  }
+}
+
+/*        480 PX MAX           */
+
+@media screen and (max-width: 480px) {
+    .clients-info-table {
+    width: 100%;
+    max-width: 100%;
+  }
+    
+  .clients h3 {
+    margin-bottom: 10px;
+  }
+
+  .clients h2 {
+    margin-bottom: 10px;
+  }
+}
+
+/*        768 PX MAX           */
+
+@media screen and (min-width: 481px) and (max-width: 1279px) {
+  .clients-info {
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+  }
+
+  .clients-info-table {
+    width: 85%;
+    max-width: 85%;
+  }
+
+  .clients-info-table-text {
+    font-size: 1.4rem;
+  }
+
+  .clients-info-name {
+    font-size: 1.5rem;
+  }
+
+  .clients h3 {
+    margin-bottom: 30px;
+  }
+}
+
+/*       1280+  PX            */
+
+
+@media screen and (min-width: 1280px) {}
+
+@media screen and (min-width: 1900px) {}
