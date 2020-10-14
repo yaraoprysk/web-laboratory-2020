@@ -4,16 +4,25 @@
     <head>
         <meta charset="UTF-8">
         <title>TRAFICO. </title>
-
-        <link rel="stylesheet" href="css/styles.css">
-
-        <!-- Support libs -->
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/reset.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--Fonts-->
-        <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto:wght@700&family=Rubik:wght@300;500;700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto:wght@700&family=Rubik:wght@300;500;700&display=swap">
+
+        <!-- Support libs -->
+        <link rel="stylesheet" href="css/cross-browsers/reset.css">
+        <link rel="stylesheet" href="css/cross-browsers/normalize.css">
+
+        <!--Styles-->
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/animation.css">
+        <link rel="stylesheet" href="css/article.css">
+        <link rel="stylesheet" href="css/clients.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/header-img.css">
+        <link rel="stylesheet" href="css/header-legend.css">
+        <link rel="stylesheet" href="css/header-nav.css">
+        <link rel="stylesheet" href="css/page.css">
 
     </head>
 
@@ -27,28 +36,33 @@
                     <a href="#"><img src="images/logo.svg" alt="TRAFICO." /></a>
                 </div>
 
-                <nav class="nav">
-
-                    <!--Menu-->
-                    <ul>
-                        <li><a href="#">about</a></li>
-                        <li><a href="#">how to</a></li>
-                        <li><a href="#">faqs</a></li>
-                        <button class="nav-button btn">contact us</button>
-                    </ul>
+                <nav class="menu-wrap">
+                    <input type="checkbox" class="toggler">
+                    <div class="hamburger">
+                        <div></div>
+                    </div>
+                    <div class="menu">
+                        <div>
+                            <div>
+                                <ul>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">faqs</a></li>
+                                <li><a href="#">contact us</a></li>
+                                <li><a href="#">how to</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </nav>
             </div>
 
             <!--Legend-->
             <div class="legend">
                 <div class="legend-text">
-                    <h1>Your awesome traffic permit consultant.</h1>
+                  <h1>Your awesome traffic permit consultant.</h1>
                 </div>
-
-                <button class="btn legend-button">get started
-                    <div class="arrow-legend-button"></div>
-                </button>
-
+                <button class="btn legend-button">
+                  get started<div class="legend-button-arrow"></div></button>
             </div>
 
             <div class="car-image">
@@ -85,10 +99,10 @@
             <!--How to apply-->
 
             <section class="how-to-apply">
-                <div class="article-text">
+                <div class="article">
                     <h3>how to apply</h3>
 
-                    <span class="apllying">
+                    <span class="article-text">
                         When applying for a traffic permit, there are certain
                         requirements that you must meet that are included in
                         the examination: requirements for professional
